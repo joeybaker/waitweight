@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>waitweight test</title>
+</head>
+<body>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+  <script src="../waitweight.js"></script>
+  <script type="text/javascript">
+    for (var i = 10; i > 0; i--){
+      $.ajax({url: 'http://google.com', type: 'POST', data: {}})
+      console.log($.activeTransforms)
+    }
+    setTimeout(function(){
+      // window.location.href = window.location.href
+    },0)
+  </script>
+
+</body>
+</html>

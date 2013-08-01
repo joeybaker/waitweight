@@ -1,0 +1,12 @@
+{
+  "name": "waitweight",
+  "version": "0.0.0",
+  "main": "waitweight.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
