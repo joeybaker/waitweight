@@ -18,8 +18,8 @@ $(document).ajaxComplete(function(e, xhr, settings) {
   return $.activeTransforms--
 })
 
-window.onbeforeunload || (window.onbeforeunload = function() {
-  if ($.activeTransforms) {
+window.onbeforeunload || (window.addEventListener('beforeunload', function(){
+  if ($.activeTransforms){
     return 'There are some pending network requests which\nmeans closing the page may lose unsaved data.'
   }
-})
+}, false)
